@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SearchRestaurant">
         <activity
+            android:name=".DetailViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SearchRestaurantActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

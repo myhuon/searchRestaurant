@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">searchRestaurant</string>
+    <string name="api_key">AIzaSyBMmhHue0ZHjSdLi5r8Ur_8wa-96adkqm8</string>
+    <string name="keyword_hint">찾으려는 음식점을 입력해주세요</string>
+    <string name="init_lat">37.604094</string>
+    <string name="init_lng">127.042463</string>
+    <string name="main_explain">하트를 누르시면 관심 목록에 추가됩니다.</string>
+    <string name="home_explain">이 앱은 현재 자신의 위치 반경 500m 내에 위치하는 음식점을 검색하여 정보를 얻을 수 있고,
+        원하는 음식점은 관심 목록에 추가하여 메모를 남길 수 있습니다.\n
+        위치를 좀 더 쉽게 알고싶다면 지도 보기를 클릭해주세요! </string>
+    <string name="foods_img_source"><a href='https://.pngtree.com/so/귀여운'>귀여운 png에서 .pngtree.com/</a></string>
 </resources>
