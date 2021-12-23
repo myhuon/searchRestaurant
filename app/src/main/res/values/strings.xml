@@ -9,4 +9,6 @@
         원하는 음식점은 관심 목록에 추가하여 메모를 남길 수 있습니다.\n
         위치를 좀 더 쉽게 알고싶다면 지도 보기를 클릭해주세요! </string>
     <string name="foods_img_source"><a href='https://.pngtree.com/so/귀여운'>귀여운 png에서 .pngtree.com/</a></string>
+    <string name="channel_name">AlramChannel</string>
+    <string name="channel_description">메모 저장을 알리는 알람 채널입니다.</string>
 </resources>
