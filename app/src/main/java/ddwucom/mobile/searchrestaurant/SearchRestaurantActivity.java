@@ -182,7 +182,7 @@ public class SearchRestaurantActivity extends AppCompatActivity {
         new NRPlaces.Builder().listener(placesListener)
                 .key(getString(R.string.api_key))
                 .latlng(Double.parseDouble(getString(R.string.init_lat)), Double.parseDouble(getString(R.string.init_lng)))
-                .radius(100)
+                .radius(500)
                 .type(type)
                 .build()
                 .execute();
@@ -197,7 +197,7 @@ public class SearchRestaurantActivity extends AppCompatActivity {
     /*Place ID 의 장소에 대한 세부정보 획득*/
     private void getPlaceDetail(String placeId) {
         // Place.Field 타입의 세부정보 설정한다.
-        List<Place.Field> placeField = Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.PHONE_NUMBER, Place.Field.ADDRESS, Place.Field.PHOTO_METADATAS
+        List<Place.Field> placeField = Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.PHONE_NUMBER, Place.Field.ADDRESS, Place.Field.PHOTO_METADATAS,
                                                 Place.Field.LAT_LNG, Place.Field.WEBSITE_URI);
         // placeId와 세부정보를 설정한 placeField를 설정한 FetchPlaceRequest.builder()로 FetchPlaceRequest 객체를 생성하고 build() 한다.
         FetchPlaceRequest request = FetchPlaceRequest.builder(placeId, placeField).build();

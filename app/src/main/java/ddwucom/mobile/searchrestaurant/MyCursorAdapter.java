@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
@@ -31,13 +30,13 @@ public class MyCursorAdapter extends CursorAdapter {
     public void bindView(View view, Context context, Cursor cursor) {
         ViewHolder holder = (ViewHolder) view.getTag();
 
-        if (holder.cbAreaName == null) {
-            holder.cbAreaName = view.findViewById(R.id.cbName);
-            holder.tvAreaPhone = view.findViewById(R.id.tvPhone_heart);
-            holder.tvAreaAddress = view.findViewById(R.id.tvAddress_heart);
+        if (holder.tvAreaName == null) {
+            holder.tvAreaName = view.findViewById(R.id.tvName);
+            holder.tvAreaPhone = view.findViewById(R.id.tvPhone);
+            holder.tvAreaAddress = view.findViewById(R.id.tvAddress);
         }
 
-        holder.cbAreaName.setText(cursor.getString(cursor.getColumnIndex(AreaDBHelper.COL_NAME)));
+        holder.tvAreaName.setText(cursor.getString(cursor.getColumnIndex(AreaDBHelper.COL_NAME)));
         holder.tvAreaPhone.setText(cursor.getString(cursor.getColumnIndex(AreaDBHelper.COL_PHONE)));
         holder.tvAreaAddress.setText(cursor.getString(cursor.getColumnIndex(AreaDBHelper.COL_ADDRESS)));
     }
@@ -45,12 +44,12 @@ public class MyCursorAdapter extends CursorAdapter {
     static class ViewHolder {
 
         public ViewHolder() {
-            cbAreaName = null;
+            tvAreaName = null;
             tvAreaPhone = null;
             tvAreaAddress = null;
         }
 
-        CheckBox cbAreaName;
+        TextView tvAreaName;
         TextView tvAreaPhone;
         TextView tvAreaAddress;
     }
