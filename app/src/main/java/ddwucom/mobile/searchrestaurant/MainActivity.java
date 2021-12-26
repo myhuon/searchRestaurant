@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private void onClick(View v){
+    public void onClick(View v){
         switch (v.getId()){
             case R.id.btnStart_home:
                 Intent intent = new Intent(this, SearchRestaurantActivity.class);

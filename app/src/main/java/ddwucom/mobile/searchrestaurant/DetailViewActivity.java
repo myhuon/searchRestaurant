@@ -98,7 +98,10 @@ public class DetailViewActivity extends AppCompatActivity {
         tvWebsiteUri.setText(websiteUri);
 
         // 사진은 FetchPhotoRequest로 한 번 더 요청 처리 해야지 이미지 Bitmap 얻을 수 있음
-        setPhoto(photoMetadata);
+        if(photoMetadata != null){
+            setPhoto(photoMetadata);
+        }
+
     }
 
     public void createNotificationChannel(){
@@ -116,7 +119,7 @@ public class DetailViewActivity extends AppCompatActivity {
         }
     }
 
-    private void onClick(View v){
+    public void onClick(View v){
         switch(v.getId()){
             case R.id.btnSaveMemo:
                 // 저장하시겠습니까? 다이얼로그 띄우기

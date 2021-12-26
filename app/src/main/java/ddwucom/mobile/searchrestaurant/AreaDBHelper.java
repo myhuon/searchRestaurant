@@ -33,9 +33,9 @@ public class AreaDBHelper extends SQLiteOpenHelper {
         Log.d(TAG, creatSql);
         db.execSQL(creatSql);
 
-        /*db.execSQL("insert into " + TABLE_NAME + " values (null, '서울 골프장', '010-111-222', '서울');");
-        db.execSQL("insert into " + TABLE_NAME + " values (null, '구리 골프장', '010-333-444', '구리');");
-        db.execSQL("insert into " + TABLE_NAME + " values (null, '부산 골프장', '010-555-666', '부산');");*/
+        db.execSQL("insert into " + TABLE_NAME + " values (null, '토리돈가스', '02-919-9617', '서울 성북구 화랑로13길 24', '돈가스맛집', 'null', 'null', 'null');");
+        db.execSQL("insert into " + TABLE_NAME + " values (null, '청년고기장수', '02-942-8090', '서울 성북구 화랑로13길 8', '고기맛집', 'null', 'null', 'null');");
+        db.execSQL("insert into " + TABLE_NAME + " values (null, '백소정', '050713653437', '서울 성북구 화랑로11길 11-3', '일식당', 'null', 'null', 'null');");
     }
 
     // db 업그레이드 시 자동 호출 ( 버전 달라지면 )

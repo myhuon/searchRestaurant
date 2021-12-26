@@ -89,10 +89,7 @@ public class MapActivity extends AppCompatActivity {
             mGoogleMap.setMyLocationEnabled(true);
         }
 
-        // 내 위치 확인 버튼 클릭 처리 리스너
-        mGoogleMap.setOnMyLocationButtonClickListener(locationButtonClickListener);
-        // 지도 상의 현재 위치 아이콘 클릭 처리 리스너
-        mGoogleMap.setOnMyLocationClickListener(locationClickListener);
+
     }*/
 
     // 지도 중심 이동 시키는 버튼 눌렀을 때 동작하는 이벤트 리스너
@@ -232,6 +229,8 @@ public class MapActivity extends AppCompatActivity {
                         Toast.makeText(MapActivity.this, "No data", Toast.LENGTH_SHORT).show();
                     }
                     Toast.makeText(MapActivity.this, "Result: " + address.get(0), Toast.LENGTH_LONG).show();
+
+
                 }
             });
 

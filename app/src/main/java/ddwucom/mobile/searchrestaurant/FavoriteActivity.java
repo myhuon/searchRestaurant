@@ -129,7 +129,7 @@ public class FavoriteActivity extends AppCompatActivity {
         if(cursor != null) cursor.close();
     }
 
-    private void onClick(View v){
+    public void onClick(View v){
         switch(v.getId()){
             /*case R.id.btnRemoveSelect:
                 // 선택 된 항목 찾아서 favorite 리스트에서 삭제
